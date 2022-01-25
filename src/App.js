@@ -1,16 +1,16 @@
 import './App.css';
-import Header from "./components/Header";
 import theme from "./theme";
-import {ThemeProvider} from "@mui/material";
-
+import {ThemeProvider} from "@material-ui/core/styles";
+import {CssBaseline} from "@material-ui/core";
+import {Header} from "./components/Header";
 
 function App() {
     return (
         <ThemeProvider theme={theme}>
+            <CssBaseline/>
             <div className="App">
                 <Header> </Header>
             </div>
-
         </ThemeProvider>
     );
 }

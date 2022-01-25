@@ -1,30 +1,19 @@
-import {createMuiTheme} from '@material-ui/core/styles'
+import { createTheme } from "@material-ui/core/styles";
 
-const theme = createMuiTheme({
-    largeIcon: {
-        width: 150,
-        height: 150,
-    },
-    breakpoints: {
-        values: {
-            xxs: 0, // small phone
-            xs: 300, // phone
-            sm: 600, // tablets
-            md: 900, // small laptop
-            lg: 1200, // desktop
-            xl: 1536 // large screens
-        }
-    },
+const theme = createTheme({
     palette: {
         background: {
-            default: "#3D4454"
+            default: 'white'
         },
         type: 'light',
         primary: {
-            main: '#3D4454',
+            main: '#F37021',
         },
         secondary: {
-            main: '#D22423',
+            main: '#0077B6',
+        },
+        tertiary: {
+            main: '#773344',
         },
         success: {
             main: '#5CF64A',
